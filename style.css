@@ -12,7 +12,7 @@
     height: 300px;
     display: flex;
     flex-wrap: wrap;
-    outline: solid 2px red;
+    /* outline: solid 2px red; */
 
 }
 
@@ -22,4 +22,8 @@
     outline: solid 2px blue;
     
 
+}
+
+.entered-div {
+    background-color: purple;
 }
