@@ -3,25 +3,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100dvh;
     margin: 0;
+    gap: 20px;
 }
 
 .container {
     width: 400px;
-    height: 300px;
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
-    /* outline: solid 2px red; */
+    outline: solid 2px red;
 
 }
 
 .grid-item {
-    flex: 0 0 6.25%;
-    height: 6.25%;
     outline: solid 2px blue;
     
-
 }
 
 .entered-div {
