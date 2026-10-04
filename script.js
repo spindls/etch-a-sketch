@@ -17,7 +17,13 @@ for (let i = 0; i < 256; i++) {
 
 const sizeButton = document.querySelector(".size-button");
 sizeButton.addEventListener("click", (e) => {
-    const divWidth = prompt("please enter the size of which you'd like your sketch-pad 1-100.");
+    let divWidth = prompt("please enter the desired number of squares per side for new grid.");
+    if (divWidth === null || divWidth.trim() === "") {
+        divWidth = 16;
+    } else if (divWidth > 100 || divWidth < 1) {
+        alert("please enter a valid number 1 - 100")
+        return;
+    }
     container.replaceChildren();
     const totalSquares = divWidth * divWidth;
 for (i = 0; i < totalSquares; i++) {
