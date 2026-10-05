@@ -14,7 +14,6 @@ for (let i = 0; i < 256; i++) {
     e.target.classList.add("entered-div");
     e.target.style.backgroundColor = "black";
     e.target.style.opacity = newOpacity;
-    console.log("div entered");
 });
 };
 
