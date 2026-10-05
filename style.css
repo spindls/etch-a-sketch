@@ -9,20 +9,56 @@
     gap: 20px;
 }
 
+.etch-sketch {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 20px;
+    background-color: darkred;
+    width: 550px;
+    height: 565px;
+
+}
+
 .container {
     width: 400px;
     height: 400px;
+    border-radius: 10px;
+    background-color: whitesmoke;
     display: flex;
     flex-wrap: wrap;
-    outline: solid 2px red;
 
 }
 
-.grid-item {
-    outline: solid 2px blue;
-    
+p {
+    color: gold;
+    font-size: 24px;
+    font-family: "Pacifico", cursive;
+
 }
 
-.entered-div {
-    background-color: purple;
+.both-dials {
+    width: 95%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.dial1, .dial2 {
+    background-color: whitesmoke;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    outline: solid 3px gray;
+}
+
+button {
+    width: 70px;
+    height: 50px;
+    background-color: rgb(132, 226, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
 }

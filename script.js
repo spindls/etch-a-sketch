@@ -9,9 +9,12 @@ for (let i = 0; i < 256; i++) {
     div.style.width = "25px";
     div.style.height = "25px";
     div.addEventListener("mouseenter", (e) => {
+    let currentOpacity = Number(e.target.style.opacity) || 0;
+    let newOpacity = currentOpacity + 0.1;
+    e.target.classList.add("entered-div");
+    e.target.style.backgroundColor = "black";
+    e.target.style.opacity = newOpacity;
     console.log("div entered");
-    div.classList.add("entered-div");
-
 });
 };
 
@@ -24,8 +27,8 @@ sizeButton.addEventListener("click", (e) => {
         alert("please enter a valid number 1 - 100")
         return;
     }
-    container.replaceChildren();
-    const totalSquares = divWidth * divWidth;
+container.replaceChildren();
+const totalSquares = divWidth * divWidth;
 for (i = 0; i < totalSquares; i++) {
     const div = document.createElement("div");
         div.style.width = 400 / divWidth + "px";
@@ -33,11 +36,14 @@ for (i = 0; i < totalSquares; i++) {
     div.classList.add("grid-item");
     container.appendChild(div);
     gridOfDivs.push(div);
-        div.addEventListener("mouseenter", (e) => {
-    console.log("div entered");
-    div.classList.add("entered-div");
-        });
-};
+    div.addEventListener("mouseenter", (e) => {
+    let currentOpacity = Number(e.target.style.opacity) || 0;
+    let newOpacity = currentOpacity + 0.1;
+    e.target.classList.add("entered-div");
+    e.target.style.backgroundColor = "black";
+    e.target.style.opacity = newOpacity;
+    });
+    };
 });
 
 
